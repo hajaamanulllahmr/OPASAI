@@ -3,7 +3,7 @@
 > A fully offline personal AI assistant powered by Phi-3 (via Ollama).  
 > Knows everything about you from your profile. No internet. No API keys. No cloud.
 
-**By Haja Amanullah M R & Amal Fathima A S**
+**By Haja Amanullah M R**
 
 ---
 
