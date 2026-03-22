@@ -1,0 +1,28 @@
+# OPASAI — Python Dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Ollama (separate install) handles the Phi-3 model — no GPU required.
+# Download from: https://ollama.com/download
+
+# ── Web server 
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+
+# ── Desktop GUI 
+customtkinter==5.2.2
+Pillow>=10.0.0
+
+# ── Voice — Text-to-Speech (offline, uses OS voices)
+pyttsx3==2.90
+
+# ── Voice — Speech-to-Text, primary (offline, best quality) 
+faster-whisper==1.1.0
+sounddevice==0.4.6
+numpy>=1.24,<2.0
+
+# ── Voice — Speech-to-Text, fallback (offline, lightweight) 
+pocketsphinx==5.0.0
+# pyaudio — needed on Linux/macOS for SpeechRecognition microphone input
+# Windows: pip install pipwin && pipwin install pyaudio
+# Linux:   sudo apt install portaudio19-dev && pip install pyaudio
+# macOS:   brew install portaudio && pip install pyaudio
